@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/index'
+
   resources :restaurants do
   #->Prelang (voting/acts_as_votable)
   member do
