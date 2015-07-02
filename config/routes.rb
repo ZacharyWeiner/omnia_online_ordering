@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :menu_items
+
   resources :orders
 
   devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords"}, skip: [:sessions, :registrations]
