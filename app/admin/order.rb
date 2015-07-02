@@ -1,4 +1,5 @@
 ActiveAdmin.register Order do
+  permit_params :street_address, :street_address_2, :street_address_2, :city, :state
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
